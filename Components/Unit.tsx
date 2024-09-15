@@ -6,10 +6,11 @@ import Image from 'next/image';
 interface UnitProps {
   levels: number;
   unit: number;
+  activeCount:number;
   nextTopic: string;
 }
 
-const Unit: React.FC<UnitProps> = ({ levels, unit, nextTopic }) => {
+const Unit: React.FC<UnitProps> = ({ levels, unit, nextTopic, activeCount }) => {
   const margins = [
     ['mr-0', 'ml-0'],
     ['mr-[70px]', 'ml-[70px]'],
@@ -19,8 +20,8 @@ const Unit: React.FC<UnitProps> = ({ levels, unit, nextTopic }) => {
     ['mr-0', 'ml-0'],
   ];
 
-  const [selectedLevel, setSelectedLevel] = useState<number>(0); // Default to first level selected
-  const [activeLevel] = useState<number>(2); // Example: activeLevel 3
+  const [selectedLevel, setSelectedLevel] = useState<number>(activeCount); // Default to first level selected
+  const [activeLevel] = useState<number>(activeCount); // Example: activeLevel 3
 
   const handleSelectLevel = (index: number) => {
     // Only allow selection of levels within activeLevel range

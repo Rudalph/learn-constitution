@@ -9,11 +9,14 @@ const MiddleSection = () => {
             <UnitIndicator section={1} unit={1} title={'Pair letters and sounds'}/>
         </div>
         <div className="flex flex-col">
-            <div className='mt-[180px]'>
-                <Unit levels={5} unit={1} nextTopic={'Pair letters and sounds '}/>
+            <div id='unit1' className='mt-[60px]'>
+                <Unit levels={5} unit={1} nextTopic={'Pair letters and sounds '} activeCount={2}/>
             </div>
-            <div className=''>
-                <Unit levels={5} unit={2} nextTopic={'Pair letters and sounds '}/>
+            <div id='unit2' className=''>
+                <Unit levels={5} unit={2} nextTopic={'Pair letters and sounds '} activeCount={0}/>
+            </div>
+            <div id='unit3' className=''>
+                <Unit levels={5} unit={3} nextTopic={'Pair letters and sounds '} activeCount={0}/>
             </div>
         </div>
     </div>
