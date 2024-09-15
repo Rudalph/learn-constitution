@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Sidebar = () => {
     return (
-        <aside className="hidden lg:flex h-screen w-64 flex-col overflow-y-auto border-r-2 bg-white px-5 py-8 fixed left-0 top-0">
+        <aside className="hidden lg:flex h-screen w-64 flex-col overflow-y-auto border-r-2 bg-white px-5 py-8 ">
             <div className='font-extrabold text-3xl text-[#58CC02] px-3'><a href="/">Connect</a></div>
             <div className="mt-6 flex flex-1 flex-col justify-between">
                 <nav className="text-center mt-2">
