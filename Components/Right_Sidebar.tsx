@@ -43,11 +43,11 @@ const Right_Sidebar = () => {
                         <div className="card border-2 border-[#E5E5E5] w-96 mt-5">
                             <div className="card-body">
                                 <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold w-72">Create profile to save progress</h2>
-                                <div className='flex justify-center'>
-                                    <button className="btn bg-[#58CC02] text-white rounded-2xl w-80 font-extrabold hover:bg-[#61E002]">CREATE A PROFILE</button>
+                                <div className='flex justify-center p-1'>
+                                    <button className="btn bg-[#58CC02] text-white rounded-2xl w-80 font-extrabold hover:bg-[#61E002] shadow-[0_5px_0_#3FA001] border-[#58CC02]">CREATE A PROFILE</button>
                                 </div>
-                                <div className='flex justify-center'>
-                                    <button className="btn bg-[#1CB0F6] text-white rounded-2xl w-80 font-extrabold hover:bg-[#1FC2FF]">SIGN IN</button>
+                                <div className='flex justify-center p-1'>
+                                    <button className="btn bg-[#1CB0F6] text-white rounded-2xl w-80 font-extrabold hover:bg-[#1FC2FF] shadow-[0_5px_0_#1AA8EB] border-[#1FC2FF]">SIGN IN</button>
                                 </div>
                             </div>
                         </div>
