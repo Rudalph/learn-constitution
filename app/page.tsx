@@ -10,7 +10,7 @@ export default function Home() {
       <div className="lg:w-[20%]">
         <Sidebar />
       </div>
-      <div className="lg:w-[50%]">
+      <div className="lg:w-[50%] h-screen overflow-y-auto no-scrollbar">
         <MiddleSection/>
       </div>
       <Right_Sidebar />
