@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Right_Sidebar = () => {
     return (
         <div>
-            <aside className="hidden lg:flex h-screen align-middle items-center  flex-col overflow-y-auto border-r bg-white px-5 py-8 fixed right-0 top-0">
+            <div className="hidden lg:flex h-screen align-middle items-center  flex-col overflow-y-auto border-r bg-white px-5 py-8 ">
                 <div className='flex justify-center font-extrabold text-3xl text-[#58CC02] px-3'>
                     <div className='flex text-[#FC8806] text-xl px-5'><Image src="/national-emblem.png" alt='' height={35} width={35} /></div>
                     <div className='flex text-[#FC8806] text-xl px-5'><Image src="/fire.png" alt='' height={35} width={35} /><p className='flex justify-center align-middle items-center ml-3'>15</p></div>
@@ -54,7 +54,7 @@ const Right_Sidebar = () => {
 
                     </nav>
                 </div>
-            </aside>
+            </div>
         </div>
     )
 }

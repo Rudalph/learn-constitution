@@ -20,3 +20,12 @@
     text-wrap: balance;
   }
 }
+
+/* styles/globals.css or any imported global css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in Chrome, Safari, and other Webkit browsers */
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
