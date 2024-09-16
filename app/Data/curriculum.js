@@ -10,23 +10,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section1/unit1/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section1/unit1/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section1/unit1/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section1/unit1/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section1/unit1/chapter5/"
+                "link": "/Videos"
               }
             ]
           },
@@ -36,27 +36,27 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section1/unit2/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section1/unit2/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section1/unit2/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section1/unit2/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section1/unit2/chapter5/"
+                "link": "/Videos"
               },
               {
                 "chapter": "Chapter 6",
-                "link": "/section1/unit2/chapter6/"
+                "link": "/Mcqs"
               }
             ]
           },
@@ -66,27 +66,27 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section1/unit3/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section1/unit3/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section1/unit3/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section1/unit3/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section1/unit3/chapter5/"
+                "link": "/Videos"
               },
               {
                 "chapter": "Chapter 6",
-                "link": "/section1/unit3/chapter6/"
+                "link": "/Mcqs"
               }
             ]
           },
@@ -96,23 +96,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section1/unit4/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section1/unit4/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section1/unit4/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section1/unit4/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section1/unit4/chapter5/"
+                "link": "/Videos"
               }
             ]
           }
@@ -128,23 +128,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section2/unit1/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section2/unit1/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section2/unit1/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section2/unit1/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section2/unit1/chapter5/"
+                "link": "/Videos"
               }
             ]
           },
@@ -154,23 +154,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section2/unit2/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section2/unit2/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section2/unit2/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section2/unit2/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section2/unit2/chapter5/"
+                "link": "/Videos"
               }
             ]
           }
@@ -186,23 +186,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section3/unit1/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section3/unit1/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section3/unit1/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section3/unit1/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section3/unit1/chapter5/"
+                "link": "/Videos"
               }
             ]
           },
@@ -212,23 +212,23 @@ const curriculumProgressData = {
             "chapters": [
               {
                 "chapter": "Chapter 1",
-                "link": "/section3/unit2/chapter1/"
+                "link": "/Mcqs"
               },
               {
                 "chapter": "Chapter 2",
-                "link": "/section3/unit2/chapter2/"
+                "link": "/Matching"
               },
               {
                 "chapter": "Chapter 3",
-                "link": "/section3/unit2/chapter3/"
+                "link": "/Images"
               },
               {
                 "chapter": "Chapter 4",
-                "link": "/section3/unit2/chapter4/"
+                "link": "/Audio"
               },
               {
                 "chapter": "Chapter 5",
-                "link": "/section3/unit2/chapter5/"
+                "link": "/Videos"
               }
             ]
           }

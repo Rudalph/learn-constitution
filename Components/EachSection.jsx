@@ -10,16 +10,16 @@ const EachSection = () => {
             </div>
             <div className="flex flex-col">
                 <div id='unit1' className='mt-[60px]'>
-                    <Unit levels={5} unit={1} nextTopic={'Pair letters and sounds '} activeCount={2}/>
+                    <Unit chapters={5} unit={1} unitName={'Pair letters and sounds '} completed={2}/>
                 </div>
                 <div id='unit2' className=''>
-                    <Unit levels={5} unit={2} nextTopic={'Pair letters and sounds '} activeCount={0}/>
+                    <Unit chapters={5} unit={2} unitName={'Pair letters and sounds '} completed={0}/>
                 </div>
                 <div id='unit3' className=''>
-                    <Unit levels={5} unit={3} nextTopic={'Pair letters and sounds '} activeCount={0}/>
+                    <Unit chapters={5} unit={3} unitName={'Pair letters and sounds '} completed={0}/>
                 </div>
                 <div id='unit4' className=''>
-                    <Unit levels={6} unit={4} nextTopic={'Pair letters and sounds '} activeCount={0}/>
+                    <Unit chapters={6} unit={4} unitName={'Pair letters and sounds '} completed={0}/>
                 </div>
             </div>
         </div>
