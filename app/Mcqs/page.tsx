@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Question_Bottom from '@/Components/Question_Bottom'
 
 
-const page = () => {
+const Page = () => {
     const [correct, setCorrect] = useState(false)
     return (
         <div className='flex flex-col justify-center items-center '>
@@ -85,4 +85,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
