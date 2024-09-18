@@ -57,23 +57,25 @@ const Unit: React.FC<UnitProps> = ({ unit, unitData }) => {
                 {/* Outer circle color based on activeLevel */}
                 <div
                   className={`ml-[1px] pt-[24px] pb-[26px] px-[27px] rounded-full flex justify-center ${
-                    index <= activeLevel ? 'bg-[#46A302]' : 'bg-[#AFAFAF]'
+                    index <= activeLevel ? '' : 'bg-[#AFAFAF]'
                   }`}
+                  style={index <= activeLevel ? { backgroundColor: unitData.darkColor } : {}}
                 >
                   {/* Hidden circle */}
                   .
                 </div>
 
+
                 {/* Inner circle with hover effect and color change */}
                 <div
                   className={`pt-[19px] pb-5 px-[21px] rounded-full text-3xl shadow-2xl -mt-[76px] ${
-                    index <= activeLevel
-                      ? 'bg-[#58CC02] text-white '
-                      : 'bg-[#E5E5E5] text-[#AFAFAF]'
+                    index <= activeLevel ? 'text-white' : 'bg-[#E5E5E5] text-[#AFAFAF]'
                   }`}
+                  style={index <= activeLevel ? { backgroundColor: unitData.color } : {}}
                 >
                   <FaStar />
                 </div>
+
               </div>
             </Link>
           </div>
