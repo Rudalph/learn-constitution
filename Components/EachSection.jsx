@@ -7,28 +7,37 @@ const EachSection = ({ sectionData }) => {
   const [currentUnit, setCurrentUnit] = useState(1); // Default to unit 1
   const unitRefs = useRef([]); // Ref to store unit elements
 
-  useEffect(() => {
-    const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px',
-      threshold: 0.5 // Trigger when 50% of the unit is in view
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const unitIndex = unitRefs.current.indexOf(entry.target);
-          setCurrentUnit(unitIndex + 1); // Index + 1 to match unit number
+    useEffect(() => {
+        const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.5 // Trigger when 50% of the unit is in view
+        };
+    
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            const unitIndex = unitRefs.current.indexOf(entry.target);
+            setCurrentUnit(unitIndex + 1); // Index + 1 to match unit number
+            }
+        });
+        }, options);
+    
+        unitRefs.current.forEach(unit => {
+        if (unit) {
+            observer.observe(unit); // Ensure it's a valid DOM element
         }
-      });
-    }, options);
-
-    unitRefs.current.forEach(unit => observer.observe(unit));
-
-    return () => {
-      unitRefs.current.forEach(unit => observer.unobserve(unit));
-    };
-  }, []);
+        });
+    
+        return () => {
+        unitRefs.current.forEach(unit => {
+            if (unit) {
+            observer.unobserve(unit); // Ensure it's a valid DOM element
+            }
+        });
+        };
+    }, []);
+  
 
   const currentUnitData = sectionData.units[currentUnit - 1]; // Get current unit's data, including color
 
