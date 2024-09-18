@@ -4,13 +4,11 @@ import { FaStar } from "react-icons/fa";
 import Image from 'next/image';
 
 interface UnitProps {
-  chapters: number; // Updated prop name
   unit: number;
-  completed: number;
-  unitName: string; // Updated prop name
+  unitData:JSON
 }
 
-const Unit: React.FC<UnitProps> = ({ chapters, unit, unitName, completed }) => {
+const Unit: React.FC<UnitProps> = ({  unit, unitData }) => {
   const margins = [
     ['mr-0', 'ml-0'],
     ['mr-[70px]', 'ml-[70px]'],
@@ -20,8 +18,8 @@ const Unit: React.FC<UnitProps> = ({ chapters, unit, unitName, completed }) => {
     ['mr-0', 'ml-0'],
   ];
 
-  const [selectedLevel, setSelectedLevel] = useState<number>(completed); // Default to first level selected
-  const [activeLevel] = useState<number>(completed); // Example: activeLevel 3
+  const [selectedLevel, setSelectedLevel] = useState<number>(unitData.completed); // Default to first level selected
+  const [activeLevel] = useState<number>(unitData.completed); // Example: activeLevel 3
 
   const handleSelectLevel = (index: number) => {
     // Only allow selection of levels within activeLevel range
@@ -36,7 +34,7 @@ const Unit: React.FC<UnitProps> = ({ chapters, unit, unitName, completed }) => {
         <Image src="https://i.pinimg.com/originals/d4/df/75/d4df752e6c38f46adcd9de2de67ab82b.gif" alt="Duolingo GIF" width={180} height={180} />
       </div>
       <div className="levels flex flex-col items-center space-y-2">
-        {margins.slice(0, chapters).map((margin, index) => ( // Update here
+        {margins.slice(0, unitData.chapters.length).map((margin, index) => ( // Update here
           <div
             key={index}
             className={`${unit % 2 === 0 ? margin[1] : margin[0]}`}
@@ -75,7 +73,7 @@ const Unit: React.FC<UnitProps> = ({ chapters, unit, unitName, completed }) => {
       <div className="flex items-center justify-between mt-10">
         <div className="flex-grow border-t-[3px] border-gray-300 rounded-full"></div>
         <div className="px-3 font-bold text-lg text-[#AFAFAF]">
-          {unitName} 
+          {unitData.unit} 
         </div>
         <div className="flex-grow border-t-[3px] border-gray-300 rounded-full"></div>
       </div>

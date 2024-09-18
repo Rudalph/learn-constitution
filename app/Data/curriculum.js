@@ -1,7 +1,7 @@
 const curriculumProgressData = {
-    "syllabus": [
+    "sections": [
       {
-        "Section 1": "Title of Section 1",
+        "title": "Title of Section 1",
         "completed": false,
         "units": [
           {
@@ -119,7 +119,7 @@ const curriculumProgressData = {
         ]
       },
       {
-        "Section 2": "Physics",
+        "title": "Title of Section 2",
         "completed": false,
         "units": [
           {
@@ -177,7 +177,7 @@ const curriculumProgressData = {
         ]
       },
       {
-        "Section 3": "Chemistry",
+        "title": "Chemistry",
         "completed": false,
         "units": [
           {
