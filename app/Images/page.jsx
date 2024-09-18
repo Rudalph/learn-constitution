@@ -1,22 +1,15 @@
 "use client"
-import React from 'react'
+import React,{useState} from 'react'
 import Image from 'next/image'
 import Question_Bottom from '@/Components/Question_Bottom'
+import Header_Of_Questions from '@/Components/Header_Of_Questions'
 
 
 const Page = () => {
+    const [correct, setCorrect] = useState(false)
     return (
         <div className='flex flex-col justify-center items-center '>
-            <div className='flex justify-center align-middle items-center mt-5 lg:mt-9'>
-                <div className=' cursor-pointer mr-2 lg:m-4'>
-                    <Image src="/cross.png" alt='' height={32} width={32} className='' />
-                </div>
-                <progress className="progress w-56 lg:w-[990px] h-4 bg-[#E5E5E5] m-1" value={0} max="100"></progress>
-                <div className='flex text-[#FF3A53] text-xl ml-2 lg:ml-4 font-extrabold'>
-                    <Image src="/heart.png" alt='' height={35} width={35} />
-                    <p className='flex justify-center items-center ml-3'>5</p>
-                </div>
-            </div>
+            <Header_Of_Questions />
             <div className='flex justify-between align-middle items-center flex-wrap'>
                 <div className='lg:h-96 lg:w-[500px] flex justify-center align-middle items-center mt-10 p-5 '>
                     <img src="https://blog.ipleaders.in/wp-content/uploads/2020/11/Constitution-of-India-1024x576.png" alt="#" className=' object-cover rounded-lg' />
@@ -83,8 +76,8 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className='hidden lg:fixed bottom-0 z-50 border-t-2 border-[#E5E5E5] w-full lg:flex justify-center align-middle items-center'>
-              <Question_Bottom />
+            <div className={`hidden lg:fixed bottom-0 z-50 border-t-2 border-[#E5E5E5] w-full lg:flex justify-center align-middle items-center ${correct ? 'bg-[#D7FFB8]' : ''}`}>
+              <Question_Bottom setCorrect={setCorrect}/>
             </div>
         </div>
 
