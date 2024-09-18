@@ -30,12 +30,18 @@ const EachSection = ({ sectionData }) => {
     };
   }, []);
 
-  const currentUnitData = sectionData.units[currentUnit - 1];
+  const currentUnitData = sectionData.units[currentUnit - 1]; // Get current unit's data, including color
 
   return (
     <div className="section">
-      <div className="UnitIndicator mt-10 px-5 sticky top-10 w-[100%] z-10">
-        <UnitIndicator section={1} unit={currentUnit} title={currentUnitData ? currentUnitData.unit : ''} />
+      <div className="UnitIndicator mt-4 px-5 sticky top-10 w-[100%] z-10">
+        {/* Pass the color from the current unit data to the UnitIndicator */}
+        <UnitIndicator
+          section={1}
+          unit={currentUnit}
+          title={currentUnitData ? currentUnitData.unit : ''}
+          color={currentUnitData ? currentUnitData.color : '#58CC02'} // Use color from JSON, fallback to default if not found
+        />
       </div>
       <div className="flex flex-col">
         {sectionData.units.map((unitData, index) => (
