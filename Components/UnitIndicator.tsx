@@ -5,10 +5,11 @@ interface UnitIndicatorProps {
     section: number | string;
     unit: number | string;
     title: string;
+    color:string;
 }
-const UnitIndicator: React.FC<UnitIndicatorProps> = ({section, unit, title}) => {
+const UnitIndicator: React.FC<UnitIndicatorProps> = ({section, unit, title, color}) => {
   return (
-    <div className='bg-[#58CC02] rounded-xl px-5 py-4 w-[100%]'>
+    <div className={`bg-[${color}] rounded-xl px-5 py-4 w-[100%]`}>
         <div className='flex space-x-2 text-[#CDF0B4]'>
             <div className="back-btn-div flex items-center font-bold">
                 <button><FaArrowLeft /></button>

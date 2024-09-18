@@ -3,11 +3,11 @@ const curriculumProgressData = {
       {
         "title": "Title of Section 1",
         "completed": false,
-        "color":"#58CC02",
         "units": [
           {
             "unit": "Unit 1",
             "completed": 3,
+            "color":"#58CC02",
             "chapters": [
               {
                 "chapter": "Chapter 1",
