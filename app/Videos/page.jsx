@@ -1,10 +1,11 @@
 "use client"
-import React from 'react'
+import React,{useState} from 'react'
 import Image from 'next/image'
 import Question_Bottom from '@/Components/Question_Bottom'
 
 
 const Page = () => {
+    const [correct, setCorrect] = useState(false)
     return (
         <div className='flex flex-col justify-center items-center '>
             <div className='flex justify-center align-middle items-center mt-5 lg:mt-9'>
@@ -82,8 +83,8 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className='hidden lg:fixed bottom-0 z-50 border-t-2 border-[#E5E5E5] w-full lg:flex justify-center align-middle items-center'>
-              <Question_Bottom />
+            <div className={`hidden lg:fixed bottom-0 z-50 border-t-2 border-[#E5E5E5] w-full lg:flex justify-center align-middle items-center ${correct ? 'bg-[#D7FFB8]' : ''}`}>
+              <Question_Bottom setCorrect={setCorrect}/>
             </div>
         </div>
 
