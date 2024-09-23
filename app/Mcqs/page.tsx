@@ -37,9 +37,9 @@ const Page = () => {
                 <p className='text-center'>The question will be MCQ-based and will be asked on the Constitution of India, Part 4 (Union) and Part 5 (States)?</p>
             </div>
 
-            <div className='flex justify-around gap-6 align-middle items-center mt-8 lg:mt-24 flex-wrap p-1'>
+            <div className='flex justify-around gap-6 align-middle items-center mt-8 lg:mt-16 flex-wrap p-1'>
                 
-                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] lg:w-96 ${bgColor.option1 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option1')} >
+                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] lg:w-96 ${bgColor.option1 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option1')} >
                     <div className="card-body p-2">
                         <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                         <div className='flex justify-between gap-5'>
@@ -51,7 +51,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] lg:w-96 ${bgColor.option2 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option2')}>
+                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] lg:w-96 ${bgColor.option2 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option2')}>
                     <div className="card-body p-2">
                         <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                         <div className='flex justify-between gap-5'>
@@ -65,7 +65,7 @@ const Page = () => {
             </div>
 
             <div className='flex justify-around gap-6 align-middle items-center mt-7 flex-wrap p-1'>
-                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] lg:w-96 ${bgColor.option3 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option3')}>
+                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] border-[#E5E5E5] lg:w-96 ${bgColor.option3 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option3')}>
                     <div className="card-body p-2">
                         <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                         <div className='flex justify-between gap-5'>
@@ -77,7 +77,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] lg:w-96 ${bgColor.option4 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option4')}>
+                <div className={`card border-2 shadow-[0_5px_0_#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] border-[#E5E5E5] lg:w-96 ${bgColor.option4 ? 'bg-[#DDF4FF] shadow-[0_5px_0_#84D8FF] border-[#84D8FF]' : ''}`} onClick={()=>handleSelect('option4')}>
                     <div className="card-body p-2">
                         <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                         <div className='flex justify-between gap-5'>

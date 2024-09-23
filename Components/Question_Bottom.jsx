@@ -13,7 +13,7 @@ const Question_Bottom = ({setCorrect}) => {
     return (
         <div>
 
-            <div className='flex justify-between lg:w-[900px] flex-wrap gap-5 pt-12 pb-12 h-36'>
+            <div className='flex justify-between lg:w-[900px] flex-wrap gap-5 pt-8 pb-8 h-32'>
                 {changes ? <button className="btn w-40 rounded-2xl bg-[white] text-[#9D9D9D] border border-[#9D9D9D] font-extrabold text-lg shadow-[0_5px_0_#9D9D9D] hover:bg-[#E5E5E5]">SKIP</button> :
                   <div className='flex justify-center align-middle items-center gap-5'>
                     <Image src="/tick.png" height={60} width={60} className='p-2 bg-white rounded-full animate-bounce'/>
