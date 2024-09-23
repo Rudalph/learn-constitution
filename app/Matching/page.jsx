@@ -15,100 +15,100 @@ const Page = () => {
             </div>
 
             <div className='flex justify-center align-middle items-center'>
-                <div className='mt-8 lg:mt-5 flex-wrap p-1'>
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3" >
+                <div className='mt-8 lg:mt-3 flex-wrap p-1'>
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]" >
                         <div className="card-body p-2">
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     1
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2 m-1">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     2
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     3
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     4
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div className='mt-8 lg:mt-5 flex-wrap p-1'>
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3" >
+                <div className='mt-8 lg:mt-3 flex-wrap p-1'>
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]" >
                         <div className="card-body p-2">
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     5
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing....</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing....</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2 m-1">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     6
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     7
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3">
+                    <div className="card border-2 border-[#E5E5E5] lg:w-96 m-3 cursor-pointer hover:bg-[#F1F3F4]">
                         <div className="card-body p-2">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
                             <div className='flex justify-between gap-5'>
                                 <div className="flex justify-center items-center w-[35px] h-[35px] border border-gray-300 rounded-md text-gray-500 text-sm font-extrabold">
                                     8
                                 </div>
-                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold'>Complete 9 more lessons to start competing</p>
+                                <p className='flex justify-center align-middle items-center text-[#777777] font-bold text-sm 2xl:text-md'>Complete 9 more lessons to start competing</p>
                             </div>
                         </div>
                     </div>
