@@ -1,23 +1,16 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
+interface DropdownWithCalloutProps {
+  isDropDownVisible: boolean;
+}
+const DropdownWithCallout: React.FC<DropdownWithCalloutProps> = ({isDropDownVisible}) => {
 
-const DropdownWithCallout: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const toggleDropdown = (): void => {
-    setIsVisible(!isVisible);
-  };
 
   return (
     <div className="dropdown-container">
-      {/* The button triggering the dropdown */}
-      <button className="trigger-button" onClick={toggleDropdown}>
-        <span className="star-icon">⭐</span>
-      </button>
-
       {/* The dropdown with a triangular callout */}
-      {isVisible && (
-        <div className="dropdown-content">
+      {isDropDownVisible && (
+        <div className="dropdown-content -mt-20">
           <div className="callout"></div> {/* Triangular Callout */}
           <div className="dropdown-box">
             <h4>Pair letters and sounds</h4>
