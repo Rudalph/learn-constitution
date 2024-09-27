@@ -13,13 +13,17 @@ const DropdownWithCallout: React.FC<DropdownWithCalloutProps> = ({ isDropDownVis
       {isDropDownVisible && (
         <div className="absolute top-12 left-0 z-10 -mt-20">
           <div className="callout"></div>
-          <div className="w-0 h-0 border-l-10 border-r-10 border-b-10 border-transparent border-b-green-500 ml-5"></div> {/* Triangular Callout */}
-          <div className="bg-green-500 text-white p-3 rounded shadow-lg w-48">
-            <h4 className="font-bold">Pair letters and sounds</h4>
-            <p>Lesson 1 of 4</p>
-            <button className="bg-white text-green-500 p-2 rounded font-bold mt-2 w-full hover:bg-gray-200">
-              START +10 XP
-            </button>
+          <div className="bg-[#58CC02] text-white p-5 rounded-xl w-72">
+            <h4 className="font-bold text-xl">Pair letters and sounds</h4>
+            <p className='text-sm mb-2'>Lesson 1 of 4</p>
+            <div className="flex w-full space-x-3">
+              <button className="bg-[#58CC02] text-white px-2 py-[6px] rounded-lg font-bold mt-2 w-full border-2 border-white">
+                Learn 
+              </button>
+              <button className='bg-white text-[#58CC02] px-2 py-[6px] rounded-lg font-bold mt-2 w-full hover:bg-gray-200'>
+                Test
+              </button>
+            </div>
           </div>
         </div>
       )}
