@@ -32,11 +32,13 @@ const Unit: React.FC<UnitProps> = ({ unit, unitData }) => {
   };
 
   const toggleDropdown = (index: number): void => {
-    // Toggle the dropdown for the selected index
-    if (visibleDropdownIndex === index) {
-      setVisibleDropdownIndex(null); // Close if the same index is clicked
-    } else {
-      setVisibleDropdownIndex(index); // Open the dropdown for the selected index
+    if (index <= activeLevel) {
+      // Toggle the dropdown for the selected index
+      if (visibleDropdownIndex === index) {
+        setVisibleDropdownIndex(null); // Close if the same index is clicked
+      } else {
+        setVisibleDropdownIndex(index); // Open the dropdown for the selected index
+      }
     }
   };
 
@@ -76,12 +78,13 @@ const Unit: React.FC<UnitProps> = ({ unit, unitData }) => {
                   index <= activeLevel ? 'text-white' : 'bg-[#E5E5E5] text-[#AFAFAF]'
                 }`}
                 style={index <= activeLevel ? { backgroundColor: unitData.color } : {}}
-                onClick={() => toggleDropdown(index)} // Pass index to toggleDropdown
+                onClick={() => toggleDropdown(index)} // Only allow dropdown if index <= activeLevel
               >
                 <FaStar />
               </div>
             </div>
-            <DropdownWithCallout isDropDownVisible={visibleDropdownIndex === index} />
+            {/* Dropdown is only visible if index matches visibleDropdownIndex and is within activeLevel */}
+            <DropdownWithCallout backgroundColor={unitData.color} isDropDownVisible={visibleDropdownIndex === index} />
           </div>
         ))}
       </div>
