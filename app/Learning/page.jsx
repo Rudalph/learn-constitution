@@ -1,6 +1,9 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import HomeButton from '@/Components/homeButton';
+import { HiMiniSpeakerWave } from "react-icons/hi2";
+import { RiVideoFill } from "react-icons/ri";
 
 const page = () => {
 
@@ -67,18 +70,21 @@ const page = () => {
 
     return (
         <div>
-            <div className='flex justify-center align-middle items-center mt-10 lg:mt-20 lg:gap-28 flex-wrap px-2'>
-
-                <div className=''>
-                    <div className="card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] lg:w-[700px]">
-                        <div className="card-body p-2">
+            <HomeButton/>
+            <div className='flex justify-center align-middle items-center my-10  xl:pl-20'>
+                
+                <div className='w-[80%]'>
+                    <div className="flex justify-center text-3xl font-bold mb-2">Let&apos;s Learn Constituiton </div>
+                    <div className="flex justify-center text-lg font-semibold mb-6">Get to know the articles of Indian consitituition</div>
+                    <div className="flex card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer ">
+                        <div className="card-body p-8">
                             <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold">Article 52: The President of India</h2>
                             <div className='gap-5'>
-                                <h1 class=" font-bold mb-4">Establishment of the Office of the President</h1>
+                                <h1 className=" font-bold mb-4">Establishment of the Office of the President</h1>
                                 <p className=" mb-4">Article 52 simply states that India shall have a President. The President is the head of the Union executive, meaning they hold the highest office in the country.</p>
 
                                 <h2 className=" font-semibold mt-6 mb-2">Role and Significance</h2>
-                                <p class=" mb-4">The President acts as the ceremonial head of the country, symbolising the unity of the nation. Though much of the power lies with the Prime Minister and the Council of Ministers, the President's role is crucial in formalising decisions, laws, and appointments.</p>
+                                <p className=" mb-4">The President acts as the ceremonial head of the country, symbolising the unity of the nation. Though much of the power lies with the Prime Minister and the Council of Ministers, the President's role is crucial in formalising decisions, laws, and appointments.</p>
 
                                 <h3 className=" font-semibold mt-6 mb-2">Example</h3>
                                 <p className=" mb-4">When a law is passed by Parliament, the President must give assent for it to become official law. Though this is a formal process, it ensures checks and balances.</p>
@@ -93,20 +99,18 @@ const page = () => {
                 </div>
 
 
-                <div className=''>
-                    <div className="card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] lg:w-40 lg:h-30 m-5">
+                <div className='w-[20%] flex flex-col items-center'>
+                    <div className="card bg-[#58CC02] shadow-[0_5px_0_#61B800]  cursor-pointer  lg:w-40 lg:h-30 m-5">
                         <div className="card-body p-2">
-                            <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
-                            <div className='flex justify-center gap-5'>
-                                <Image src="/audio.png" alt='' height={80} width={80} onClick={handleAudioClick} />
+                            <div className='flex justify-center gap-5 text-6xl text-white'>
+                                <HiMiniSpeakerWave  onClick={handleAudioClick} />
                             </div>
                         </div>
                     </div>
-                    <div className="card border-2 shadow-[0_5px_0_#E5E5E5] border-[#E5E5E5] cursor-pointer hover:bg-[#F1F3F4] lg:w-40 lg:h-30 m-5">
+                    <div className="card bg-[#1CB0F6] shadow-[0_5px_0_#1AA8EB]  cursor-pointer ] lg:w-40 lg:h-30 m-5">
                         <div className="card-body p-2">
-                            <h2 className="card-title text-lg text-[#4B4B4B] font-extrabold"></h2>
-                            <div className='flex justify-center gap-5'>
-                                <button onClick={() => document.getElementById('my_modal_2').showModal()}><Image src="/video.png" alt='' height={80} width={80} /></button>
+                            <div className='flex justify-center gap-5 text-6xl text-white'>
+                                <RiVideoFill onClick={() => document.getElementById('my_modal_2').showModal()} />
                             </div>
                         </div>
                     </div>
